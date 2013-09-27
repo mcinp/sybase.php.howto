@@ -56,7 +56,9 @@
 <li>Unpack the archive</li>
 <li>From the clientxxxx directory (where xxxx is client version number) run setup script.</li>
 <li>You can leave all questions on their defaults (the client package will be installed in /opt/sqlanywhere12).</li>
-<li>Add this line to your httpd configuration script (on RHEL/CentOS/Fedora this is <em>/etc/sysconfig/httpd</em>) <code>source /opt/sqlanywhere12/bin32/sa_config.sh</code>. It will provide proper paths to SQLAnywhere libraries.</li>
+<li>Add this line to your httpd configuration script (on RHEL/CentOS/Fedora this is <em>/etc/sysconfig/httpd</em>).
+<code>source /opt/sqlanywhere12/bin32/sa_config.sh</code>
+It will provide proper paths to SQLAnywhere libraries.</li>
 <li>Download appropriate compiled php module for your plaftorm and PHP version from <em>The SAP Sybase SQL Anywhere PHP Module</em> page (<a href="http://scn.sap.com/docs/DOC-40537">http://scn.sap.com/docs/DOC-40537</a>).</li>
 <li>Copy the module to php modules directory (on RHEL/CentOS/Fedora this it's <em>/usr/lib/php/modules</em>, check phpinfo() output or php.ini script to see where your modules are stored.</li>
 <li>Add configuration entry to load the module (on RHEL/CentOS/Fedora run <code>echo "extension=php-5.x.x_sqlanywhere_r.so" &gt; /etc/php.d/sqlanywhere.ini</code>)</li>
